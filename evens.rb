@@ -15,7 +15,8 @@ class EvenInds
   end
 
   def method3
-    
+    @even_inds = []
+    @array.each_slice(2) { |a, b| @even_inds << a }
   end
 
 end
